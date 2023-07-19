@@ -1,12 +1,62 @@
 <!DOCTYPE html>
    <html>
    <head>
-      <title>delphii's home page</title>
+      <title>My CSS</title>
       <link rel="stylesheet" href="styles.css">
-      <script defer src="script.js"></script>
+      <script defer src="scripts/DrawNavBar.js"></script>
    </head>
-   <body>
-      <h1>welcome to my website!!</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad quod pariatur quia recusandae sequi enim aliquid, eaque magni dignissimos nulla debitis repellat eum ipsa ex rem tempore perferendis molestiae.</p>
+   <body onload="DrawNavBar(navbar)">
+      <header>
+         <h1>Header</h1>
+      </header>
+      <nav>
+         <ul id="navbar">
+            <!-- programatically generated -->
+         </ul>
+      </nav>
+      <br>
+      <main>
+         <section>
+            <h2>Heading 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cum est eos eveniet itaque voluptatibus earum cupiditate autem consequatur consectetur, molestiae ea magnam cumque enim! Id nemo repudiandae optio nihil!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorum quis dolorem maxime eaque quidem vitae fugit officiis, ex, necessitatibus explicabo pariatur tempore dicta. Rem esse pariatur ipsa sint provident.</p>
+         </section>
+         <section>
+            <h2>Heading 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore fugiat, nobis consequatur exercitationem voluptate temporibus eos quo consectetur esse vero cupiditate minima nesciunt, culpa facere saepe dignissimos commodi placeat ut. Doloremque molestias nobis omnis magnam, soluta modi aut voluptatum aperiam porro! Modi atque, obcaecati esse fugiat perspiciatis cum totam. Saepe, soluta inventore?</p>
+            <ul>
+               <li>List item 1</li>
+               <li>List item 2</li>
+               <li>List item 3</li>
+               <li>List item 4</li>
+               <li>List item 5</li>
+               <li>List item 6</li>
+            </ul>
+         </section>
+      </main>
+      <footer>
+         <h1>Footer</h1>
+         <a href="#">Anchor</a>
+      </footer>
    </body>
+   <script>
+      var navbar = `-[Anchor 1](anchor1.html)
+-[Anchor 2](anchor2.html)
+>[Dropdown 1](dropdown1/index.html)
+=[Anchor A](dropdown1/anchorA.html)
+=[Anchor B](dropdown1/anchorB.html)
+=[Anchor C](dropdown1/anchorC.html)
+=[Anchor D](dropdown1/anchorD.html)
+=[Anchor E](dropdown1/anchorE.html)
+=[Anchor F](dropdown1/anchorF.html)
+-[Anchor 3](anchor1.html)
+-[Anchor 4](anchor2.html)
+>[Dropdown 2](dropdown2/index.html)
+=[Anchor A](dropdown2/anchorA.html)
+=[Anchor B](dropdown2/anchorB.html)
+=[Anchor C](dropdown2/anchorC.html)
+=[Anchor D](dropdown2/anchorD.html)
+-[Anchor 5](anchor5.html)
+~[Anchor 6](anchor6.html)`;
+   </script>
 </html>
