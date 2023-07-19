@@ -1,10 +1,77 @@
-*{
-    font-family: Tahoma;
-    
-    background-color: black;
-    color: white;
+*
+{
+   font-family: sans-serif;
+
+   background-color: black;
+   color: silver;
+
+   user-select: none;
 }
 
-h1{
-    color: crimson;
+
+
+#navbar
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: teal;
+}
+
+#navbar > li,
+#navbar > *:not(.navbar-content) > ul > li
+{
+   float: left;
+}
+
+li a,
+.btn-dropdown
+{
+   display: inline-block;
+   padding: 0.5em;
+
+   background-color: teal;
+   color: black;
+
+   text-align: center;
+   text-decoration: none;
+}
+
+li a:hover:not(.active),
+.dropdown:hover .btn-dropdown:not(.active)
+{
+   background-color: gray;
+   color: black;
+}
+
+li a.active
+{
+   background-color: silver;
+   color: black;
+}
+
+li.dropdown
+{
+   display: inline-block;
+}
+
+.dropdown-content
+{
+   display: none;
+   position: absolute;
+   min-width: 12em;
+   z-index: 1;
+}
+
+.dropdown-content a
+{
+   text-decoration: none;
+   display: block;
+   text-align: left;
+}
+
+.dropdown:hover .dropdown-content
+{
+   display: block;
 }
